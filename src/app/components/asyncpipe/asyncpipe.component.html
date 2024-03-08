@@ -1,0 +1,18 @@
+<p>asyncpipe works!</p>
+
+<!-- <h2>{{promise |async}}</h2> -->
+
+<h2>{{asyncPipe |async}}</h2>
+
+
+<h4>{{booleanOb | async}}</h4>
+
+<div *ngIf="booleanOb | async;else elseblock">
+
+    <h4 color="red">this is true block</h4>
+
+</div>
+
+<ng-template #elseblock>
+    <h4>This is else block</h4>
+</ng-template>

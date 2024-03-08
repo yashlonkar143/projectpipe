@@ -1,0 +1,57 @@
+<p>pipe works!</p>
+
+<div class="container">
+    <h4>Todays date:{{toDate}}</h4>
+    <h4>medium: {{toDate|date:'medium'}}</h4>
+    <p>medium : {{toDate | date:'medium'}} </p>
+    <p>short : {{toDate | date:'short'}} </p>
+    <p>fullDate : {{toDate | date:'fullDate'}} </p>
+    <p>longDate : {{toDate | date:'longDate'}} </p>
+    <p>mediumDate : {{toDate | date:'mediumDate'}} </p>
+    <p>shortDate : {{toDate | date:'shortDate'}} </p>
+    <p>mediumTime : {{toDate | date:'mediumTime'}} </p>
+    <p>dd-MM-y : {{toDate | date:'dd-MM-y'}} </p>
+    <p>dd-MM-yy HH:mm : {{toDate | date:'dd-MM-yy HH:mm'}} </p>
+
+</div>
+
+<h4>string pipe</h4>
+<div class="container">
+    <h4>{{msg|uppercase}}</h4>
+    <p>{{msg|lowercase}}</p>
+</div>
+
+<h4>slice pipe</h4>
+<div class="container">
+    <p>{{msg}}</p>
+    <p>{{msg|slice:2}}</p>
+    <p>{{msg|slice:0:5}}</p>
+    <p>{{msg|slice:-5}}</p>
+</div>
+
+<h4>number pipe</h4>
+<div class="container">
+    <p>{{num}}</p>
+    <p>{{num|number}}</p>
+    <p>{{num|number:'3.1-2'}}</p>
+    <p>{{n|number: '3.1-2'}}</p>
+</div>
+
+<h4>Percent pipe</h4>
+<div class="container">
+    <p>{{per}}</p>
+    <p>{{per|percent}}</p>
+
+</div>
+
+<h4>Currency pipe</h4>
+<div class="container">
+    <p>{{cur | currency}}</p>
+    <p>{{cur|currency:"USD"}}</p>
+    <p>{{cur|currency:"HKD"}}</p>
+    <p>{{cur|currency:"BHD"}}</p>
+    <p>{{cur|currency:"OMR"}}</p>
+    <p>{{cur|currency:"JOD"}}</p>
+    <p>{{cur|currency:"EUR"}}</p>
+    <p>{{cur|currency:"INR"}}</p>
+</div>
